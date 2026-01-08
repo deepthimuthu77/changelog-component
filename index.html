@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Changelog</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Inter, sans-serif;
+      }
+
+      body {
+        max-width: 700px;
+        margin: 60px auto;
+        padding: 0 20px;
+        color: #111;
+      }
+
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+
+      p {
+        color: #666;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      section {
+        position: relative;
+      }
+
+      /* line */
+      section::before {
+        content: "";
+        position: absolute;
+        left: 170px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #e5e7eb;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 140px 40px 1fr;
+        align-items: center;
+        margin-bottom: 32px;
+        position: relative;
+      }
+
+      /* dot */
+      li::before {
+        content: "";
+        position: absolute;
+        left: 166px;
+        width: 10px;
+        height: 10px;
+        background: #111;
+        border-radius: 50%;
+      }
+
+      .col1 {
+        text-align: right;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .col2 {
+        padding-left: 10px;
+        grid-column: 3;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      footer {
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      button {
+        color: white;
+        padding: 12px 20px;
+        border-radius: 10px;
+        border: 1px solid #e5e7eb;
+        background: black;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 250ms;
+      }
+
+      button:hover {
+        color: black;
+        background: #f9fafb;
+        transition: 250ms;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Changelog</h1>
+    <p>Here's everything we have shipped in past few days</p>
+
+    <section>
+      <ul>
+        <li>
+          <div class="col1">September 3, 2024</div>
+          <div class="col2">Announcing Projects on Frontend Roadmap</div>
+        </li>
+        <li>
+          <div class="col1">August 28, 2024</div>
+          <div class="col2">
+            Build your learning habits with learning streaks
+          </div>
+        </li>
+        <li>
+          <div class="col1">August 25, 2024</div>
+          <div class="col2">Git and GitHub Roadmap</div>
+        </li>
+        <li>
+          <div class="col1">August 22, 2024</div>
+          <div class="col2">Submit your project solution and get feedback</div>
+        </li>
+        <li>
+          <div class="col1">August 15, 2024</div>
+          <div class="col2">Backend Project Ideas</div>
+        </li>
+        <li>
+          <div class="col1">August 10, 2024</div>
+          <div class="col2">Redis Roadmap</div>
+        </li>
+        <li>
+          <div class="col1">August 1, 2024</div>
+          <div class="col2">Changelog page to help you stay in loop</div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <button>Visit Complete Changelog</button>
+    </footer>
+  </body>
+</html>
